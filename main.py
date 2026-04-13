@@ -7,8 +7,8 @@ from openai import OpenAI, APIConnectionError, APITimeoutError
 
 # 1. 基础配置
 client = OpenAI(
-    api_key="sk-GEqUVSjf7hzC12H02gZg8No4Se3wiNVnOsiTkdRs4o5RE4c1", 
-    base_url="https://xinyuanai666.com/v1",
+    api_key=os.getenv("OPENAI_API_KEY"), 
+    base_url="https://OPENAI_API_KEY.com/v1",
     timeout=30.0  # 增加超时时间，防止中转站响应慢
 )
 
